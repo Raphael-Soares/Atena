@@ -43,39 +43,42 @@ function App() {
         <div>
             <Header scrollToContato={scrollToContato} scrollToServicos={scrollToServicos} scrollToSobre={scrollToSobre} scrollToForm={scrollToForm} />
             <main className="p-2">
-                <TextCard title="Serviços Administrativos" id="servicos">
-                    <div className="flex flex-col sm:flex-row justify-center">
-                        <TextBox title="Assessoria ao Síndico">
-                            Atividades administrativas do condomínio (balancetes, relatórios, manutenções, regulamentação, Atas). Atividades administrativas do
-                            condomínio (balancetes, relatórios, manutenções, regulamentação, Atas). Intermediação e controle junto aos prestadores de serviços.
-                        </TextBox>
-                        <Aplicativo />
-                        <TextBox title="Gestão de Contas a Pagar">
-                            Balancetes por período, com arquivos físicos e digitais com total acesso e transparência via APP. Previsão orçamentária anual.
-                            Emissão e cobrança (extrajudicial) da taxa condominial. Auxílio contábil, Gestão e planejamento financeiro.
-                        </TextBox>
-                    </div>
-                </TextCard>
-                <TextCard title="Manutenção">
-                    <div className="flex flex-col sm:flex-row my-8">
-                        <TextBox title="Plano de Manutenção">
-                            Manutenção preventiva adequada ao seu condomínio, em que o técnico faz uma visita ao condomínio, vistoriando todos os itens, e
-                            fornece um cronograma de verificações á serem executadas.
-                        </TextBox>
-                        <TextBox title="Consultoria Técnica">
-                            O Especialista fica á disposição do condomínio para dirimir dúvidas e orientação quanto á manutenções, obras, materiais e
-                            durabilidade.
-                        </TextBox>
-                        <TextBox title="Serviços e Manutenções">
-                            Leituras de consumos (água, gás, etc.). Alvenaria, Hidráulica, Esgoto, Pintura, Serralheria, Portões, Telhados e Elétrica.
-                        </TextBox>
-                    </div>
-                </TextCard>
+                <div ref={servicos}>
+                    <TextCard title="Serviços Administrativos" id="servicos">
+                        <div className="flex flex-col sm:flex-row">
+                            <TextBox title="Assessoria ao Síndico">
+                                Atividades administrativas do condomínio (balancetes, relatórios, manutenções, regulamentação, Atas). Atividades administrativas
+                                do condomínio (balancetes, relatórios, manutenções, regulamentação, Atas). Intermediação e controle junto aos prestadores de
+                                serviços.
+                            </TextBox>
+                            <Aplicativo />
+                            <TextBox title="Gestão de Contas a Pagar">
+                                Balancetes por período, com arquivos físicos e digitais com total acesso e transparência via APP. Previsão orçamentária anual.
+                                Emissão e cobrança (extrajudicial) da taxa condominial. Auxílio contábil, Gestão e planejamento financeiro.
+                            </TextBox>
+                        </div>
+                    </TextCard>
+                    <TextCard title="Manutenção">
+                        <div className="flex flex-col sm:flex-row my-8">
+                            <TextBox title="Plano de Manutenção">
+                                Manutenção preventiva adequada ao seu condomínio, em que o técnico faz uma visita ao condomínio, vistoriando todos os itens, e
+                                fornece um cronograma de verificações á serem executadas.
+                            </TextBox>
+                            <TextBox title="Consultoria Técnica">
+                                O Especialista fica á disposição do condomínio para dirimir dúvidas e orientação quanto á manutenções, obras, materiais e
+                                durabilidade.
+                            </TextBox>
+                            <TextBox title="Serviços e Manutenções">
+                                Leituras de consumos (água, gás, etc.). Alvenaria, Hidráulica, Esgoto, Pintura, Serralheria, Portões, Telhados e Elétrica.
+                            </TextBox>
+                        </div>
+                    </TextCard>
+                </div>
 
                 <hr className="w-24 border-2 mx-auto border-gray-600" />
 
                 <div className="my-16">
-                    <h1 className="text-gray-800 p-1 text-center text-xl font-bold md:text-3xl">Depoimentos</h1>
+                    <h1 className="text-sky-900 p-1 text-center text-xl font-bold md:text-3xl">Depoimentos</h1>
                     <div className="text-center">
                         <p className=" mt-2 md:mt-0   text-gray-700 ">Nossos clientes são como uma família!</p>
                         <p className=" mt-2 md:mt-0   text-gray-700 ">
