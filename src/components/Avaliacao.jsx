@@ -3,7 +3,7 @@ import pic from "../assets/pic.jpg";
 
 function Avaliacao({name, children, funcao}) {
     return (
-        <article className="m-6 p-6 w-full bg-white rounded-lg border border-gray-200 shadow-md">
+        <article className="sm:m-6 my-4 p-6 w-full bg-white rounded-lg border border-gray-200 shadow-md">
             <div className="flex items-center mb-4 space-x-4">
                 <img className="w-10 h-10 rounded-full" src={pic} alt="Imagem de perfil" />
                 <div className="space-y-1 font-medium ">

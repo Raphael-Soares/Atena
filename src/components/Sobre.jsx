@@ -8,7 +8,7 @@ function Sobre() {
                 A Atena é uma empresa espelializada em atendimento á condomínios, com profissionais experientes e capacitados. Proporcionando um custo/benefício
                 excepcional aos seus clientes, transparência na gestão, ética em seus processos, confiança, agregando valor e facilitando a rotina do síndico.
             </p>
-            <div className="flex justify-around">
+            <div className="flex justify-around text-center flex-col sm:flex-row sm:text-left w-full">
                 <TextCard title="Missão">
                     Promover a gestão condominial com a máxima eficácia e eficiência, a fim de oferecer aos nossos cliente o que há de melhor para a
                     administração de condomínios.

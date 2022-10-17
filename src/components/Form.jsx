@@ -50,7 +50,7 @@ function Form() {
         // console.log(form);
     }
     return (
-        <form className="flex flex-col justify-center p-14" onSubmit={handleSubmit} ref={ref} id="form">
+        <form className="flex flex-col justify-center p-4 sm:p-14" onSubmit={handleSubmit} ref={ref} id="form">
             <Input label="Nome Completo *" name="name" placeholder="Nome Completo" required={true} changeForm={(e) => changeForm(e)} />
             <Input label="Email *" name="email" placeholder="exemplo@email.com" required={true} changeForm={(e) => changeForm(e)} />
             <Input label="Contato *" name="contato" placeholder="(99) 99999-9999" required={true} changeForm={(e) => changeForm(e)} />

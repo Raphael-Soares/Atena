@@ -1,6 +1,7 @@
 import React from "react";
 
 function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm}) {
+    const [menu, setMenu] = React.useState(false);
     return (
         <header>
             <nav className="bg-white shadow">
@@ -13,9 +14,9 @@ function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm}
                                 </a>
                             </div>
 
-                            <div className="flex md:hidden">
+                            <div className={`flex ${open && "md:hidden"}`}>
                                 <button
-                                    type="button"
+                                    onClick={() => setMenu(!menu)}
                                     className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
                                     aria-label="toggle menu"
                                 >
@@ -69,10 +70,10 @@ function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm}
             >
                 <div className="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
                     <div className="text-center">
-                        <h1 className="text-white text-2xl font-semibold uppercase md:text-3xl">Serviços Administrativos e assessoria para condomínios</h1>
+                        <h1 className="text-white text-2xl mb-4 font-semibold uppercase md:text-3xl">Serviços Administrativos e assessoria para condomínios</h1>
                         <a
-                            href="tel:+47997301224"
-                            className="mt-4 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+                            href="tel:+554732277169"
+                            className="mt-6 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
                         >
                             Ligue agora
                         </a>
