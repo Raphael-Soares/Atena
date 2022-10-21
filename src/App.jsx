@@ -9,6 +9,7 @@ import Aplicativo from "./components/Aplicativo";
 import Sobre from "./components/Sobre";
 import Avaliacao from "./components/Avaliacao";
 import Form from "./components/Form";
+import SideImageCard from "./components/SideImageCard";
 
 function App() {
     const servicos = useRef(null);
