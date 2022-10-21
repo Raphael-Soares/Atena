@@ -94,7 +94,11 @@ function App() {
                         <Avaliacao name="Jairo dos Santos Borges" funcao="Síndico do Res. Vila Vitória">
                             “Após a cotratação da Atena Condomínios passamos a nos sentir muito mais seguros com nossas questões administrativas. É ótimo o
                             síndico trabalhar e saber que pode contar com pessoas muito bem qualificadas!”
-                        </Avaliacao>
+                        </Avaliacao>{" "}
+                        <Avaliacao name="Bruce L" funcao="Contador">
+                            “Empresa responsável e atualizada no mercado a capacitação de seus gestores são excelentes o respeito e o zelo pelo o que fazem e o
+                            que eleva sua marca, parabéns pelo ótimo serviços que prestam.”
+                        </Avaliacao>{" "}
                     </div>
                 </div>
 
