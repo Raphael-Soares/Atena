@@ -1,5 +1,5 @@
 import {useState} from "react";
-import foto from "../assets/foto.jpg";
+import foto from "../assets/foto8.jpg";
 import logo from "../assets/logo.png";
 
 function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm}) {
@@ -66,9 +66,11 @@ function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm}
                     backgroundImage: `url(${foto})`,
                 }}
             >
-                <div className="flex items-center justify-center h-full w-full bg-sky-900 bg-opacity-20">
+                <div className="flex items-center justify-center h-full w-full bg-sky-900 bg-opacity-30">
                     <div className="text-center">
-                        <h1 className="text-white text-2xl mb-4 font-semibold uppercase md:text-3xl">Serviços Administrativos e assessoria para condomínios</h1>
+                        <h1 className="text-white text-2xl mb-4 font-semibold uppercase md:text-3xl shadow">
+                            Serviços Administrativos e assessoria para condomínios
+                        </h1>
                         <a
                             href="tel:+554732277169"
                             className="mt-6 px-4 py-2 bg-sky-800 text-white text-sm uppercase font-medium rounded hover:bg-sky-500 focus:outline-none focus:bg-sky-500"

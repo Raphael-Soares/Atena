@@ -9,8 +9,10 @@ import Aplicativo from "./components/Aplicativo";
 import Sobre from "./components/Sobre";
 import Avaliacao from "./components/Avaliacao";
 import Form from "./components/Form";
-import SideImageCard from "./components/SideImageCard";
+import Contato from "./components/Contato";
 
+import Social from "./components/Social";
+import Endereco from "./components/Endereco";
 function App() {
     const servicos = useRef(null);
     const sobre = useRef(null);
@@ -44,6 +46,12 @@ function App() {
         <div>
             <Header scrollToContato={scrollToContato} scrollToServicos={scrollToServicos} scrollToSobre={scrollToSobre} scrollToForm={scrollToForm} />
             <main className="p-2">
+                <div className="flex my-16 justify-around">
+                    <Contato />
+                    <Endereco />
+                    <Social />
+                </div>
+
                 <div ref={servicos}>
                     <TextCard title="Serviços Administrativos" id="servicos">
                         <div className="flex flex-col sm:flex-row">
