@@ -19,6 +19,7 @@ function App() {
     const sobre = useRef(null);
     const contato = useRef(null);
     const form = useRef(null);
+    const depoimentos = useRef(null);
 
     function scrollToServicos() {
         scrollToRef(servicos.current.offsetTop);
@@ -35,6 +36,9 @@ function App() {
     function scrollToForm() {
         scrollToRef(form.current.offsetTop);
     }
+    function scrollToDepoimentos() {
+        scrollToRef(depoimentos.current.offsetTop);
+    }
 
     function scrollToRef(ref) {
         window.scrollTo({
@@ -45,7 +49,13 @@ function App() {
 
     return (
         <div>
-            <Header scrollToContato={scrollToContato} scrollToServicos={scrollToServicos} scrollToSobre={scrollToSobre} scrollToForm={scrollToForm} />
+            <Header
+                scrollToDepoimentos={scrollToDepoimentos}
+                scrollToContato={scrollToContato}
+                scrollToServicos={scrollToServicos}
+                scrollToSobre={scrollToSobre}
+                scrollToForm={scrollToForm}
+            />
             <main className="p-2">
                 <div className="flex flex-col sm:flex-row my-16 justify-around gap-4" ref={contato}>
                     <Contato />
@@ -90,7 +100,7 @@ function App() {
 
                 <hr className="w-24 border-2 mx-auto border-gray-600" />
 
-                <div className="my-16">
+                <div className="my-16" ref={depoimentos}>
                     <h1 className="text-sky-900 p-1 text-center text-xl font-bold md:text-3xl">Depoimentos</h1>
                     <div className="text-center">
                         <p className=" mt-2 md:mt-0   text-gray-700 ">Nossos clientes são como uma família!</p>

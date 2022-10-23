@@ -2,7 +2,7 @@ import {useState} from "react";
 import foto from "../assets/foto8.jpg";
 import logo from "../assets/logo.png";
 
-function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm}) {
+function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm, scrollToDepoimentos}) {
     const [menu, setMenu] = useState(false);
     return (
         <header>
@@ -53,6 +53,12 @@ function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm}
                                 className="block mx-4 mt-2 cursor-pointer md:mt-0 text-sm text-neutral-900 capitalize hover:text-sky-800"
                             >
                                 Contato
+                            </div>{" "}
+                            <div
+                                onClick={() => scrollToDepoimentos()}
+                                className="block mx-4 mt-2 cursor-pointer md:mt-0 text-sm text-neutral-900 capitalize hover:text-sky-800"
+                            >
+                                Depoimentos
                             </div>
                         </div>
                     </div>
