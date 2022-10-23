@@ -5,15 +5,15 @@ function Social() {
     return (
         <div className="flex flex-col items-center w-full">
             <h2 className="text-gray-800 text-xl font-bold hover:text-gray-700 md:text-xl">Tambem estamos nas redes sociais!</h2>
-            <div className="flex gap-2">
-                <span className="inline-flex gap-1 items-center ">
-                    <BsInstagram />
-                    intagram
-                </span>
-                <span className="inline-flex gap-1 items-center ">
+            <div className="flex flex-col items-center ">
+                <a href="https://www.facebook.com/Atena-Administradora-de-Condom%C3%ADnios-212030632859244/" className="inline-flex gap-1 items-center ">
                     <BsFacebook />
-                    facebook
-                </span>
+                    Atena Administradora de Condomínios
+                </a>
+                <a href="https://www.instagram.com/atenacondominios/" className="inline-flex gap-1 items-center ">
+                    <BsInstagram />
+                    atenacondominios
+                </a>
             </div>
         </div>
     );

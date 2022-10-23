@@ -10,6 +10,7 @@ import Sobre from "./components/Sobre";
 import Avaliacao from "./components/Avaliacao";
 import Form from "./components/Form";
 import Contato from "./components/Contato";
+import Mapa from "./components/Mapa";
 
 import Social from "./components/Social";
 import Endereco from "./components/Endereco";
@@ -46,10 +47,13 @@ function App() {
         <div>
             <Header scrollToContato={scrollToContato} scrollToServicos={scrollToServicos} scrollToSobre={scrollToSobre} scrollToForm={scrollToForm} />
             <main className="p-2">
-                <div className="flex my-16 justify-around">
+                <div className="flex flex-col sm:flex-row my-16 justify-around gap-4" ref={contato}>
                     <Contato />
-                    <Endereco />
                     <Social />
+                    <Endereco />
+                </div>
+                <div className="my-16">
+                    <Mapa />
                 </div>
 
                 <div ref={servicos}>
@@ -125,7 +129,7 @@ function App() {
                     <Form />
                 </div>
             </main>
-            <div ref={contato}>
+            <div>
                 <Footer />
             </div>
             <Zap />
