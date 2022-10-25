@@ -56,7 +56,7 @@ function App() {
                 scrollToSobre={scrollToSobre}
                 scrollToForm={scrollToForm}
             />
-            <main className="p-2">
+            <main className="p-4">
                 <div className="flex flex-col sm:flex-row my-16 justify-around gap-4" ref={contato}>
                     <Contato />
                     <Social />
