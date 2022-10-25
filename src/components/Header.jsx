@@ -74,7 +74,7 @@ function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm,
             >
                 <div className="flex items-center justify-center h-full w-full bg-sky-900 bg-opacity-30">
                     <div className="text-center">
-                        <h1 className="text-white text-2xl mb-4 font-semibold uppercase md:text-3xl shadow">
+                        <h1 className="text-white text-2xl mb-4 font-semibold uppercase md:text-3xl ">
                             Serviços Administrativos e assessoria para condomínios
                         </h1>
                         <a

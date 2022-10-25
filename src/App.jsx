@@ -42,7 +42,7 @@ function App() {
 
     function scrollToRef(ref) {
         window.scrollTo({
-            top: ref - 100,
+            top: ref - 30,
             behavior: "smooth",
         });
     }
