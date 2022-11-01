@@ -2,7 +2,7 @@ import {useState} from "react";
 import foto from "../assets/foto8.jpg";
 import logo from "../assets/logo.png";
 
-function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm, scrollToDepoimentos}) {
+function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm, scrollToDepoimentos, scrollToApp}) {
     const [menu, setMenu] = useState(false);
     return (
         <header>

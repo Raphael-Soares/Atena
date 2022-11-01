@@ -18,19 +18,19 @@ function Sobre() {
                     </p>
                 </section>
             </article>
-            <article className="flex sm:flex-row flex-col justify-between w-full ">
-                <section className=" shadow-lg drop-shadow-sm p-4 border-sky-700 border-l-2 sm:border-l-0 sm:border-t-2 mx-0 sm:mx-8 w-full">
+            <article className="flex sm:flex-row flex-col justify-between w-full gap-4">
+                <section className=" shadow-lg drop-shadow-sm p-4 border-sky-700 border-l-2 sm:border-l-0 sm:border-t-2 mx-0  w-full">
                     <h1 className="text-3xl py-4 font-bold">Missão</h1>
                     <p>
                         Promover a gestão condominial com a máxima eficácia e eficiência, a fim de oferecer aos nossos cliente o que há de melhor para a
                         administração de condomínios.
                     </p>
                 </section>
-                <section className=" shadow-lg drop-shadow-sm p-4 border-sky-700 border-l-2 sm:border-l-0 sm:border-t-2 sm:my-0 my-4 sm:mx-8 w-full">
+                <section className=" shadow-lg drop-shadow-sm p-4 border-sky-700 border-l-2 sm:border-l-0 sm:border-t-2 sm:my-0 my-4  w-full">
                     <h1 className="text-3xl py-4 font-bold">Visão</h1>
                     <p>Compartilhar aos clientes e amigos o máximo de conhecimento, técnicas e estratégias que visem o sucesso da gestão condominial.</p>
                 </section>
-                <section className=" shadow-lg drop-shadow-sm p-4 border-sky-700 border-l-2 sm:border-l-0 sm:border-t-2  sm:mx-8 w-full">
+                <section className=" shadow-lg drop-shadow-sm p-4 border-sky-700 border-l-2 sm:border-l-0 sm:border-t-2   w-full">
                     <h1 className="text-3xl py-4 font-bold">Valores</h1>
                     <p>Conduta permeada na ética; Respeito e humildade das relações, Atenção ás minúncias dos processos, Resiliência, Empatia e Equilibrio.</p>
                 </section>

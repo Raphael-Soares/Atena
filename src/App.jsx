@@ -68,6 +68,7 @@ function App() {
                 scrollToServicos={scrollToServicos}
                 scrollToSobre={scrollToSobre}
                 scrollToForm={scrollToForm}
+                scrollToApp={scrollToApp}
             />
             <main className="sm:mx-16 mx-8">
                 <section className="" ref={sobre}>
@@ -75,12 +76,13 @@ function App() {
                 </section>
                 <hr className="w-24 border-2 mx-auto my-16 border-gray-600" />
 
-                <div className="my-16  border-sky-700" ref={servicos}>
+                <div className="my-16  border-sky-700" ref={app}>
                     <Aplicativo />
-                    <hr className="w-24 border-2 mx-auto my-16 border-gray-600" />
+                    <hr className="w-24 border-2 mx-auto my-16 border-gray-600" ref={servicos} />
 
                     <TextCard title="Serviços Administrativos" id="servicos">
-                        <div className="flex flex-col  gap-2 " ref={app}>
+                        <div className="flex flex-col  gap-2 ">
+                            <br />
                             <div className="flex flex-col sm:flex-row gap-4 w-full justify-between">
                                 <Card image={assessoria} title="Assessoria ao Síndico">
                                     <ul className="list-disc ml-6">
@@ -138,7 +140,7 @@ function App() {
                 <hr className="w-24 border-2 mx-auto border-gray-600" />
 
                 <div className="my-16" ref={depoimentos}>
-                    <h1 className="text-sky-900 p-1 text-center text-xl font-bold md:text-3xl">Depoimentos</h1>
+                    <h1 className="text-3xl py-4 font-bold text-center">Depoimentos</h1>
                     <div className="text-center">
                         <p className=" mt-2 md:mt-0   text-gray-700 ">Nossos clientes são como uma família!</p>
                         <p className=" mt-2 md:mt-0   text-gray-700 ">
