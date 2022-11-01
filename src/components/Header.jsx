@@ -31,22 +31,22 @@ function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm,
 
                         <div className={`${!menu ? "hidden " : "block"}sm:flex -mx-4   sm:items-center`}>
                             <div
-                                onClick={() => scrollToServicos()}
-                                className="block mx-4 mt-2 cursor-pointer md:mt-0 text-sm text-neutral-900 capitalize hover:text-sky-800"
-                            >
-                                Serviços
-                            </div>
-                            <div
                                 onClick={() => scrollToSobre()}
                                 className="block mx-4 mt-2 cursor-pointer md:mt-0 text-sm text-neutral-900 capitalize hover:text-sky-800"
                             >
                                 Sobre nós
                             </div>
                             <div
-                                onClick={() => scrollToForm()}
+                                onClick={() => scrollToServicos()}
                                 className="block mx-4 mt-2 cursor-pointer md:mt-0 text-sm text-neutral-900 capitalize hover:text-sky-800"
                             >
-                                Solicitar proposta
+                                Serviços
+                            </div>
+                            <div
+                                onClick={() => scrollToApp()}
+                                className="block mx-4 mt-2 cursor-pointer md:mt-0 text-sm text-neutral-900 capitalize hover:text-sky-800"
+                            >
+                                Aplicativo
                             </div>
                             <div
                                 onClick={() => scrollToContato()}
@@ -59,6 +59,12 @@ function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm,
                                 className="block mx-4 mt-2 cursor-pointer md:mt-0 text-sm text-neutral-900 capitalize hover:text-sky-800"
                             >
                                 Depoimentos
+                            </div>{" "}
+                            <div
+                                onClick={() => scrollToForm()}
+                                className="block mx-4 mt-2 cursor-pointer md:mt-0 text-sm text-neutral-900 capitalize hover:text-sky-800"
+                            >
+                                Solicitar proposta
                             </div>
                         </div>
                     </div>
@@ -72,8 +78,8 @@ function Header({scrollToContato, scrollToServicos, scrollToSobre, scrollToForm,
                     backgroundImage: `url(${foto})`,
                 }}
             >
-                <div className="flex items-center justify-center h-full w-full bg-sky-900 bg-opacity-30">
-                    <div className="text-center">
+                <div className="flex items-center justify-center h-full w-full bg-sky-900 bg-opacity-40">
+                    <div className="text-center mt-56">
                         <h1 className="text-white text-2xl mb-4 font-semibold uppercase md:text-3xl ">
                             Serviços Administrativos e assessoria para condomínios
                         </h1>
